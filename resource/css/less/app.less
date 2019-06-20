@@ -1,0 +1,22 @@
+// Mixins tools
+@import "../../../themes/01/css/less/mixins";
+@import "../../../themes/01/css/less/modules/direction";
+
+// Includes of Modules
+@import "../../../themes/01/css/less/modules";
+
+// Responsive Util
+@import "../../../themes/01/css/less/responsive";
+
+//Change your theme here 
+@theme-name:"default";
+@direction: ltr; // use `rtl` or `ltr
+
+.theme {
+    @import "../../../themes/01/css/less/themes/@{theme-name}/theme";
+    @import "var";
+    /*@import "modules/bootbox";*/
+    @import "modules/tables";
+    @import "modules/general";
+}
+.theme(); 

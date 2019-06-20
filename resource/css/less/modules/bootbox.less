@@ -1,0 +1,244 @@
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-backdrop.in, .modal-backdrop.fade.in {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+.modal-dialog {
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+
+	.modal-content {
+	    background: #FFF;
+	    margin: 20px auto;
+	    position: relative;
+	    border: none !important;
+	    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2);
+
+	    .modal-header {
+	        border: none;
+	        padding: 24px 24px 0 24px;
+
+	        .modal-title {
+	            color: #212121;
+	            display: block;
+	            font-size: 2rem;
+	            font-weight: 900;
+	            margin: 0 0 20px 0;
+	            padding-right: 32px;
+	        }
+	        
+	        .bootbox-close-button {
+			      top: 24px;
+			      right: 24px;
+	        	width: 24px;
+			      height: 24px;
+			      line-height: 26px;
+			      background-position: 50% 50%;
+			      border-radius: 50% !important;
+
+			      &:active { top: 24px; }
+			      &:focus {
+			        color: white;
+			        background-color: #a9a9a9;
+			      }
+	        }
+	    }
+
+	    .modal-body {
+	      padding: 0 24px;
+
+	      .section { padding-top: 1rem; }
+
+	      //margin inferior en las filas
+	      .row { margin-bottom: 0.5rem !important; }
+
+	      //textos simples
+	      p.text { margin: 0 0 10px 0;}
+
+	      table {margin-bottom: 0;}
+				
+				// para los errores
+				.form-group {
+					label.control-label {
+						font-size: .85em;
+						margin-bottom: 2px;
+					}
+					label.error {
+						position: absolute;
+						color: #E53935;
+						font-size: .8em;
+						font-weight: 600;
+						opacity: .8;
+					}
+					input.error,
+					select.error,
+					textarea.error {
+						border-color: #E53935;
+					}
+				}
+				
+				// footer dentro del body
+	      .footer-body {
+	      	padding: 24px 0;
+	      	&.align-right { text-align: right !important;}
+	      	&.align-center { text-align: center !important;}
+	      }
+	    }
+
+	    .modal-footer { display: none; }
+	}
+
+}
+
+.bootbox-confirm, .bootbox-alert,  {
+	.bootbox-close-button {
+		margin-top: 16px !important;
+	}
+
+	.bootbox-body {
+		padding: 0 0 24px 0 !important;
+	}
+	.modal-footer {
+		display: block !important;
+		border-top: none;
+	}
+}
+
+.table-selected {
+	width: 100%;
+	th, td {
+		padding: 5px !important;
+		text-align: left;
+	}
+
+  tbody {
+   
+    tr {
+    	border-bottom: 1px solid #ddd !important;
+    	td { 
+    		font-size: .85em;
+    		cursor: pointer;
+    		user-select: none;
+				-moz-user-select: none;
+				-webkit-user-select: none;
+				-ms-user-select: none;
+				
+    		&:nth-child(1) { 
+    			width: 30px;
+    			text-align: center;
+    		}
+				&:nth-child(2) { width: 70px; }
+    	}
+    }
+  }
+}
+
+.table-head {
+	border: 1px solid #ddd;
+	border-bottom: none;
+	width: 100%;
+
+	caption {
+		padding-bottom: 0;
+
+		p {
+			margin: 0;
+			font-size: 1.5rem;
+			color: #444;
+			font-weight: bold;
+			height: 34px;
+			line-height: 34px;
+			&.align-right {
+				text-align: right;
+				padding-left: 0;
+				padding-right: 1rem;
+			}
+			&.align-left {
+				text-align: left;
+				padding-left: 1rem;
+				padding-right: 0;
+			}
+		}
+
+		button {
+			height: 34px;
+			padding: 0 12px;
+			border: none;
+			color: white;
+
+			i.fa {
+				line-height: normal;
+			}
+		}
+
+		.float-right {
+			float: right;
+		}
+
+		.float-left {
+			float: left;
+		}
+
+		.form-control {
+			border: 1px solid #ddd;
+			border-bottom: none;
+			&:focus {
+				border: 1px solid #ddd;
+				border-bottom: none;
+			}
+		}
+	}
+
+	thead {
+		tr {
+			th {
+				padding: 5px 3px;
+				text-align: left;
+				&:nth-child(1) { 
+					width: 30px;
+					text-align: center; 
+				}
+				&:nth-child(2) { width: 70px; }
+			}
+		}
+	}
+}
+
+.container-table {
+	border: 1px solid #ddd;
+	display: block;
+	overflow: auto;
+	width: 100%;
+	height: 250px;
+	max-height: 250px;
+}
+
+.md-title {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 600;
+  color: #666;
+  margin: 0;
+}
+
+.md-subtitle {
+	text-align: center;
+	margin: 0 0 10px 0;
+	color: #888;
+	font-size: 1.4rem;
+	font-weight: 600;
+}

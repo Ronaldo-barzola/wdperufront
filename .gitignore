@@ -1,0 +1,13 @@
+*.log
+nbproject/*
+assets/*
+storage/*
+node_modules/*
+tmp/*
+!assets/.gitignore
+!assets/.gitkeep
+protected/runtime/*
+protected/extensions/Padlock/*
+!protected/runtime/.gitkeep
+!protected/runtime/.gitignore
+

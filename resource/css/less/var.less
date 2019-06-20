@@ -1,0 +1,15 @@
+@color-app :#486CA9;    
+/*@color-app : #F2B203;*/
+/*@color-app : #76C04E;*/
+@color-primary:@color-app;
+ 
+@color-menu :@color-white;
+@color-menu-dark :mix(@color-menu, #000, 90%);
+
+//Generating Menu font color
+@menu-mix-temp : mix(@color-menu, #000, 100%);
+@menu :hardlight(#000, @menu-mix-temp);
+@menu :@color-master;
+  
+//Menu Font Color
+@color-menu-link-hover:mix(@color-app,@color-master,60%);  
